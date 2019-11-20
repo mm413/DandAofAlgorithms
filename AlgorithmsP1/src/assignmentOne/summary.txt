@@ -1,0 +1,10 @@
+I ran into some issues when testing. Because of the physical cap on the size of long numbers in Java, I couldn't
+test all of the numbers I wanted to with the second method. The divide by 0 error was thrown when the gap between
+n and k was larger than 25. For that reason, I capped n's size to 25, and tested every 5 numbers for both n and k 
+across all 3 methods. In my relativley small test pool, I was able to generalize that method 1's results more or 
+less  increase unreliably as n/k increases. Method 2 seems to be all over the place, without showing any solid pattern.
+It's time to calculate varied extremley, showing no trends. I suspect this is because of my small sample size.
+If I was able to test larger values for n/k over a longer range, I believe I'd see a trend of increased calculation
+times with bigger n/k values. Finally, method 3 seemed to reliably increase in time for all of my tests.
+As long as n was increasing (while k stayed the same) the amount of time taken to calculate the result increased
+exponentially. This is how I suspected this expirement to go.
